@@ -1,11 +1,14 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { RouterView } from 'vue-router'
+import { TooltipProvider } from 'radix-vue'
+import { useThemeStore } from '@/stores/theme'
+
+// Inicializa o store para aplicar o tema imediatamente via watcher interno
+useThemeStore()
+</script>
 
 <template>
-  <div class="flex items-center justify-center h-screen bg-slate-900">
-    <h1 class="text-4xl font-bold text-red-400 underline">
-      Vue 3 Project
-    </h1>
-  </div>
+  <TooltipProvider :delay-duration="400">
+    <RouterView />
+  </TooltipProvider>
 </template>
-
-<style scoped></style>
