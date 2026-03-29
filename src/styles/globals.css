@@ -1,0 +1,73 @@
+@import "./base/variables.css";
+@import "tailwindcss";
+@import "./base/reset.css";
+
+/* scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-base-border) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color-base-border);
+  border-radius: 9999px;
+}
+
+/* utilities */
+.text-muted {
+  color: var(--color-base-text-muted);
+}
+
+.text-income {
+  color: var(--color-zen-success);
+}
+
+.text-expense {
+  color: var(--color-zen-error);
+}
+
+.card-surface {
+  background-color: var(--color-base-card);
+  border: 1px solid var(--color-base-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgb(0 0 0 / 0.45);
+  backdrop-filter: blur(2px);
+  z-index: 40;
+}
+
+/* transitions */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.slide-up-enter-active,
+.slide-up-leave-active {
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.slide-up-enter-from,
+.slide-up-leave-to {
+  opacity: 0;
+  transform: translateY(12px);
+}
