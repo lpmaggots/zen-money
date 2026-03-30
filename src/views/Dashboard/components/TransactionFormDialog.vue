@@ -23,7 +23,7 @@ const emit = defineEmits<{
   submit: [data: TransactionFormDialogData]
 }>()
 
-const { handleSubmit, resetForm } = useForm({
+const { handleSubmit, resetForm, setFieldValue } = useForm({
   validationSchema: toTypedSchema(transactionSchema),
   initialValues: {
     description: '',
@@ -69,7 +69,7 @@ const categoryOptions = computed<SelectOption[]>(() => {
 })
 
 watch(type, () => {
-  category.value = ''
+  setFieldValue('category', '', false)
 })
 
 watch(
