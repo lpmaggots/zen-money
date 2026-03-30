@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { Plus, Sun, Moon } from 'lucide-vue-next'
-import logoUrl from '@/assets/images/zen-money-logo.png'
+import logoUrl from '@/assets/images/zen-money-logo.webp'
 import Button from '@/components/common/Button.vue'
 import FabButton from '@/components/common/FabButton.vue'
 import { useThemeStore } from '@/stores/theme'
