@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import type { Transaction } from '@/types'
-import { CATEGORY_LABELS } from '@/types'
 import { Trash2 } from 'lucide-vue-next'
-import { CATEGORY_META, getTypeColorClass } from '@/utils/categories'
+import { CATEGORY_META, getTypeColorClass, CATEGORY_LABELS } from '@/utils/categories'
 import { formatCurrency, formatDate } from '@/utils/formatters'
 import FabButton from '@/components/common/FabButton.vue'
 
