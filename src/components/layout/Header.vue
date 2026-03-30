@@ -25,8 +25,8 @@ const scrolled = computed(() => scrollY.value > 20)
       :class="[
         'transition-all duration-300 ease-in-out',
         scrolled
-          ? 'mx-auto border border-base-border/50 bg-base-card/70 shadow-card backdrop-blur-sm'
-          : 'border-b border-base-border bg-base-card',
+          ? 'mx-auto border border-base-border/50 bg-base-card/70 backdrop-blur-sm'
+          : 'border-b border-base-border bg-base-card shadow-card',
       ]"
     >
       <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6">
