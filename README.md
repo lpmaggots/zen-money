@@ -6,7 +6,7 @@ Gerenciador de transações financeiras pessoais. Permite visualizar, adicionar,
 
 ## Demo
 
-> 🔗 **Deploy:** _em breve_
+> 🔗 **Deploy:** [zen-money.netlify.app](https://zen-money.netlify.app/)
 
 ---
 
